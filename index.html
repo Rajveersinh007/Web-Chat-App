@@ -1,0 +1,36 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , intial-scale=1.0">
+    <title>Talkaro</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <!--building a standalone build of socket io which is specified in documentation-->
+    <!--it exposes a server to client hence now our client and server are connected-->
+    <script defer src="js/client.js"></script>
+    <!--note here pehle humne socket wali script lagai hai jo client ki hai and niche client.js jo server ki hai-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favIcon/icons8-messaging-48.png">
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="icon.png" alt="Logo of web_app">
+    </nav>
+
+    <div class="container">
+        <div class="message right">Raj: Hello ! how are you?</div>
+        <div class="message left">Rohit: Hi , I am fine</div>
+
+    </div>
+
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageIn" id="messageIn">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>
